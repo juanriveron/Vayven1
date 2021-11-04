@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <!--CSS Style-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./images/Logo.png">
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/05c2d5f968.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div class="top-section"> <!-- Logo & Try it button goes here -->
+    <div class="logo-section">
+      <img src="./images/logo_grande.jpeg" alt="Logo" style="width:140px; height:140px; align-items: center;" />
+      
+  <!--<button class="nav__button">Try It Free</button>-->
+    </div> 
+  </div>
+
+  <header class="header">
+    <h1 class="header__title">Creando una comunidad compartiendo</h1>
+
+    <strong class="header__paragraph">La idea consiste en crear una aplicación móvil que permita conectar a usuarios entre sí para el préstamo o donación de objetos. El objetivo de la aplicación se centra en promover la reutilización de objetos para evitar las compras innecesarias, por lo que tiene un fin medioambiental y social.</strong>
+
+    <button class="button__green">Iniciar sesión</button>
+    <!-- comienzo Carousel -->
+    <section class="novedades mb-5">
+      <div class="row">
+          <div class="novedades__titulo col-lg-4 mt-5 ml-3 d-flex align-items-center justify-content-end">
+              <h2 class="novedades__titulo titulo mt-5">¿Cuáles son los objetos más intercambiados?</h2>
+          </div>
+          <div class="novedades__carousel col-md-8 navColor mt-5 py-3 rounded mx-auto d-flex align-items-center">
+              <div id="carouselIndexFade" class="carousel slide carousel-fade  mx-auto" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselIndexTexto" data-bs-slide-to="0" class="active"
+                          aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselIndexTexto" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselIndexTexto" data-bs-slide-to="2"
+                          aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="3000">
+                          <img src="./images/videojuegos.jpg" class="d-block mx-auto">
+                          <div class="carousel-caption novedades__carousel__texto d-none d-md-block">
+                              <h5 style="color: green;">Videojuegos</h5>
+                          </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                          <img src="./images/herramientas.jpg" class="d-block mx-auto">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5 style="color: green;">Herramientas</h5>
+                          </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                          <img src="./images/libros.jpg" class="d-block mx-auto">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5 style="color: green;">Libros</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndexFade"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselIndexFade"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- fin Carousel -->
+
+    <!--<img class="header__img" src="/images/screen-mockups.svg" alt="screen-mockups">
+    <section class="header__icons">
+
+      <div class="header__icons--container">
+        <img class="header__icons--communities" src="/images/icon-communities.svg" alt="icon-communities">
+        <p class="header__icons--big-text">1.1k+</p>
+        <p class="header__icons--small-text">Círculos formados</p>
+      </div>
+
+      <div class="header__icons--container">
+        <img class="header__icon--messages" src="/images/icon-messages.svg" alt="icon-messages">
+        <p class="header__icons--big-text">2.1m+</p>
+        <p class="header__icons--small-text">Mensajes intercambiados</p>
+      </div>-->
+    </section>
+  </header>
+
+  <main class="main">
+    <img class="main__section__desktop" src="/images/bg-section-top-desktop-1.svg" alt="bg-section-top">
+    <img class="main__section__mobile" src="/images/bg-section-top-mobile-1.svg" alt="bg-section-top">
+
+    <section class="main__section section-blue">
+      <img class="main__section--img" src="/images/illustration-grow-together.svg" alt="grow-together">
+      <div class="main__section-info">
+        <h2 class="main__section--title">Creando comunidad</h2>
+        <p class="main__section--paragraph">Vayven crea vínculos entre personas con un mismo fin, a partir del uso de un mismo producto. El impacto social generado es producto de múltiples acciones de distintos miembros de muchos cículos, generando lazos de confianza e involucramiento con la comunidad. </p>
+      </div>
+    </section>
+
+    <img class="main__section__desktop" src="/images/bg-section-bottom-desktop-1.svg" alt="bg-section-bottom">
+    <img class="main__section__mobile" src="/images/bg-section-bottom-mobile-1.svg" alt="bg-section-bottom">
+
+    <section class="main__section section-white">
+      <img class="main__section--img" src="/images/illustration-flowing-conversation.svg" alt="flowing-conversation">
+      <div class="main__section-info">
+        <h2 class="main__section--title">Impacto ambiental</h2>
+        <p class="main__section--paragraph">Al promover la reutilización de bienes físicos, se evitan compras innesesarias, fomentando una cultura de menor consumismo. Vayven es considerado como un emprendimiento de carácter circular, y va de la mano con los objetivos de de desarrollo hechos por la ONU.</p>
+      </div>
+    </section>
+
+    <img class="main__section__desktop" src="/images/bg-section-top-desktop-2.svg" alt="bg-section-top">
+    <img class="main__section__mobile" src="/images/bg-section-top-mobile-2.svg" alt="bg-section-top">
+
+    <section class="main__section section-blue">
+      <img class="main__section--img" src="/images/illustration-your-users.svg" alt="your-users">
+      <div class="main__section-info">
+        <h2 class="main__section--title">Ahorro</h2>
+        <p class="main__section--paragraph">Evitando el consumismo masivo que se promueve hace mucho tiempo, al no comprar objetos de uso espóradico que a veces se precisa, se evita un gasto que hubiese sido innevitable sin Vayven</p>
+      </div>
+    </section>
+
+    <img class="main__section__desktop" src="/images/bg-section-bottom-desktop-2.svg" alt="bg-section-bottom">
+    <img class="main__section__mobile" src="/images/bg-section-bottom-mobile-2.svg" alt="bg-section-bottom">
+
+    <section class="main__section main-bottom section-white">
+      <h2 class="main__section--title section-title-big">Listo para colaborar con la sociedad y medio ambiente?</h2>
+      <button class="button__green">Únete ya!</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img class="footer__section__desktop" src="/images/bg-footer-top-desktop.svg" alt="footer-top">
+    <img class="footer__section__mobile" src="/images/bg-footer-top-mobile.svg" alt="footer-top">
+
+    <div class="footer__section--container">
+      <section class="footer__section">
+        <h2 class="footer__section--title">Consultas</h2>
+        <p class="footer__section--paragraph">Estamos abiertos a cualquier duda y/o consulta respecto a caulquier parte del proceso de intercambio de objetos</p>
+        <form>
+          <input class="footer__section--input" type="email" required>
+          <button class="footer__section--button">Enviar</button>
+        </form>
+      </section>
+      
+      <div class="footer__section--elment">
+        <section class="footer__section">
+          <h2 class="footer__section--title">VAYVEN</h2>
+          <p class="footer__section--paragraph second--paragraph">Ésta página web es hecha por estudiantes universitarios, la cuál forma parte del trabajo entregable de la materia 'Proyecto de Inversión' de la Universidad Católica del Uruguay</p>
+    
+          <div class="footer__contact">
+            <img src="/images/icon-phone.svg" alt="icon-phone">
+            <p class="footer__contact_paragraph">Tel: +2408-69-75</p>
+          </div>
+    
+          <div class="footer__contact">
+            <img src="/images/icon-email.svg" alt="icon-email">
+            <p class="footer__contact_paragraph">vayven@company.com</p>
+          </div>
+    
+          <div class="footer__media__icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter-square"></i>
+          </div>
+      </div>
+    </div>
+
+    </section>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</html>
